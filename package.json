@@ -1,16 +1,26 @@
 {
-  "name": "eslint-config-35up-base",
-  "version": "1.0.0",
+  "name": "@caseable/eslint-config-35up-base",
+  "version": "0.0.1",
   "description": "35up's base JS ESlint config",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --report-unused-disable-directives ."
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "eslint": ">=6.8.0",
-    "eslint-config-airbnb-base": ">=14.0.0",
-    "eslint-plugin-import": ">=2.20.1"
-  }
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caseable/eslint-config-35up-base.git"
+  },
+  "author": "caseable GmbH <it@caseable.com>",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/caseable/eslint-config-35up-base/issues"
+  },
+  "homepage": "https://github.com/caseable/eslint-config-35up-base"
 }

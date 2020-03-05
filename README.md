@@ -7,11 +7,9 @@ This package provides 35up's base JS .eslintrc _(framework agnostic)_ as an exte
 ### Installation
 
   ```sh
-  $ npm install eslint-config-35up-base --save-dev
-  # or
-  $ yarn add eslint-config-35up-base -D
+  $ npm install @caseable/eslint-config-35up-base --save-dev
   ```
 
 ### Setup
 
-Add `"extends": "airbnb-base"` to your .eslintrc.
+Add `"extends": "35up-base"` to your .eslintrc.

@@ -3,17 +3,7 @@ module.exports = {
   plugins: ['import'],
   env: {
     browser: true,
-    node: true,
     es6: true,
-    'shared-node-browser': true,
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.json'],
-      },
-    },
-    'import/extensions': ['.js', '.jsx']
   },
   rules: {
     'max-len': [
@@ -23,7 +13,7 @@ module.exports = {
         ignoreUrls: true,
         ignoreTemplateLiterals: true,
         ignoreRegExpLiterals: true,
-        ignorePattern: "^\\s*<svg|^import .+ from|^const .+ = require\\(|^\\s*it\\(|^\\s*test\\(|^\\s*describe\\("
+        ignorePattern: "^\\s*<svg|^import .+ from|^const .+ = require\\(|^\\s*it\\(|^\\s*test\\(|^\\s*describe\\(",
       },
     ],
     quotes: ['error', 'single', {avoidEscape: true}],
@@ -57,5 +47,34 @@ module.exports = {
     'import/order': 'warn',
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
-  }
+  },
+  overrides: [
+    {
+      files: [
+        "**/test/*",
+        "**/*.test.js",
+        "**/*.test.jsx",
+        "src/setupTests.js",
+        "**/__mocks__/**/*",
+      ],
+      env: {
+        jest: true,
+        node: true,
+      },
+      rules: {
+        'no-unused-expressions': 'off',
+        'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
+      },
+    },
+    {
+      files: ["webpack.config.js", "webpack.config.*.js"],
+      env: {
+        node: true,
+        browser: false,
+      },
+      rules: {
+        'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
+      },
+    },
+  ],
 }

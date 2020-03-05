@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-35up-base",
+  "version": "1.0.0",
+  "description": "35up's base JS ESlint config",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": ">=6.8.0",
+    "eslint-config-airbnb-base": ">=14.0.0",
+    "eslint-plugin-import": ">=2.20.1"
+  }
+}

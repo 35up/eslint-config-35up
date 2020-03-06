@@ -4,7 +4,7 @@
   "description": "35up's base JS ESlint config",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --report-unused-disable-directives ."
+    "lint": "eslint ."
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^14.0.0",

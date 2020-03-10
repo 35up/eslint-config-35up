@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caseable/eslint-config-35up-base.git"
+    "url": "git+https://github.com/caseable/eslint-config-35up.git"
   },
   "author": "caseable GmbH <it@caseable.com>",
   "license": "",
   "bugs": {
-    "url": "https://github.com/caseable/eslint-config-35up-base/issues"
+    "url": "https://github.com/caseable/eslint-config-35up/issues"
   },
-  "homepage": "https://github.com/caseable/eslint-config-35up-base"
+  "homepage": "https://github.com/caseable/eslint-config-35up"
 }

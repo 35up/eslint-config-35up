@@ -12,4 +12,4 @@ This package provides 35up's react JS .eslintrc as an extensible shared config.
 
 ### Setup
 
-Add `"extends": "35up-react"` to your .eslintrc.
+Add `"extends": "@caseable/35up-react"` to your .eslintrc.

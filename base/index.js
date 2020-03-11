@@ -13,7 +13,7 @@ module.exports = {
         ignoreUrls: true,
         ignoreTemplateLiterals: true,
         ignoreRegExpLiterals: true,
-        ignorePattern: "^\\s*<svg|^import .+ from|^const .+ = require\\(|^\\s*it\\(|^\\s*test\\(|^\\s*describe\\(",
+        ignorePattern: '^\\s*<svg|^import .+ from|^const .+ = require\\(|^\\s*it\\(|^\\s*test\\(|^\\s*describe\\(',
       },
     ],
     quotes: ['error', 'single', {avoidEscape: true}],
@@ -21,13 +21,13 @@ module.exports = {
     'no-unused-vars': [
       'error',
       {
-        argsIgnorePattern: "^_",
+        argsIgnorePattern: '^_',
         ignoreRestSiblings: true,
       },
     ],
     'no-underscore-dangle': 'error',
     'arrow-parens': ['error', 'as-needed', {requireForBlockBody: true}],
-    'class-methods-use-this': "off",
+    'class-methods-use-this': 'off',
     'no-shadow': 'warn',
     'no-param-reassign': 'warn',
     'spaced-comment': 'warn',
@@ -51,11 +51,11 @@ module.exports = {
   overrides: [
     {
       files: [
-        "**/test/*",
-        "**/*.test.js",
-        "**/*.test.jsx",
-        "src/setupTests.js",
-        "**/__mocks__/**/*",
+        '**/test/*',
+        '**/*.test.js',
+        '**/*.test.jsx',
+        'src/setupTests.js',
+        '**/__mocks__/**/*',
       ],
       env: {
         jest: true,
@@ -67,7 +67,7 @@ module.exports = {
       },
     },
     {
-      files: ["webpack.config.js", "webpack.config.*.js"],
+      files: ['webpack.config.js', 'webpack.config.*.js'],
       env: {
         node: true,
         browser: false,
@@ -77,4 +77,4 @@ module.exports = {
       },
     },
   ],
-}
+};

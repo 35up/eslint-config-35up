@@ -12,4 +12,4 @@ This package provides 35up's base JS .eslintrc _(framework agnostic)_ as an exte
 
 ### Setup
 
-Add `"extends": "35up-base"` to your .eslintrc.
+Add `"extends": "@caseable/35up-base"` to your .eslintrc.

@@ -53,7 +53,7 @@ module.exports = {
       files: [
         '**/test/*',
         '**/*.test.*',
-        'src/setupTests.*',
+        'src/setup-tests.*',
         '**/__mocks__/**/*',
       ],
       env: {

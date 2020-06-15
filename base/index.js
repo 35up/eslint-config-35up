@@ -27,6 +27,7 @@ module.exports = {
     ],
     'no-underscore-dangle': 'error',
     'arrow-parens': ['error', 'as-needed', {requireForBlockBody: true}],
+    'no-multiple-empty-lines': ['error', {max: 2, maxBOF: 0, maxEOF: 1}],
     'class-methods-use-this': 'off',
     'no-shadow': 'warn',
     'no-param-reassign': 'warn',

@@ -42,6 +42,7 @@ module.exports = {
       'always',
       {exceptAfterSingleLine: true},
     ],
+    'no-param-reassign': ['error', {props: false}],
     'import/extensions': ['error', 'never'],
     'import/no-cycle': 'warn',
     'import/no-extraneous-dependencies': 'error',

@@ -2,7 +2,6 @@ module.exports = {
   extends: ['eslint:recommended', 'airbnb-base'],
   plugins: ['import'],
   env: {
-    browser: true,
     es6: true,
   },
   rules: {
@@ -13,7 +12,10 @@ module.exports = {
         ignoreUrls: true,
         ignoreTemplateLiterals: true,
         ignoreRegExpLiterals: true,
-        ignorePattern: '^\\s*<svg|^import .+ from|^const .+ = require\\(|^\\s*it\\(|^\\s*test\\(|^\\s*describe\\(',
+        ignorePattern: (
+          '^\\s*<svg|^import .+ from|^const .+ = '
+          + 'require\\(|^\\s*it\\(|^\\s*test\\(|^\\s*describe\\('
+        ),
       },
     ],
     quotes: ['error', 'single', {avoidEscape: true}],
@@ -53,12 +55,12 @@ module.exports = {
     {
       files: [
         '**/test/*',
+        '**/tests/*',
         '**/*.test.*',
-        'src/setup-tests.*',
+        '**/setup-tests.*',
         '**/__mocks__/**/*',
       ],
       env: {
-        jest: true,
         node: true,
       },
       rules: {
@@ -67,7 +69,12 @@ module.exports = {
       },
     },
     {
-      files: ['webpack.config.js', 'webpack.config.*.js'],
+      files: [
+        'webpack.config.js',
+        'webpack.config.*.js',
+        'rollup.config.[jt]s',
+        'vite.config.[jt]s',
+      ],
       env: {
         node: true,
         browser: false,

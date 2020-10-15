@@ -1,6 +1,9 @@
 module.exports = {
   extends: ['@caseable/eslint-config-35up-base', 'plugin:react/recommended'],
   plugins: ['react'],
+  env: {
+    browser: true,
+  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -106,4 +109,18 @@ module.exports = {
     'react/no-access-state-in-setstate': 'warn',
     'react/jsx-child-element-spacing': 'warn',
   },
+  overrides: [
+    {
+      files: [
+        '**/test/*',
+        '**/tests/*',
+        '**/*.test.*',
+        '**/setup-tests.*',
+        '**/__mocks__/**/*',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ]
 };

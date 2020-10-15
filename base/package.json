@@ -1,6 +1,6 @@
 {
   "name": "@caseable/eslint-config-35up-base",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "35up's base JS ESlint config",
   "main": "index.js",
   "scripts": {

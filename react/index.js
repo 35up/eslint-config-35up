@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@caseable/eslint-config-35up-base', 'plugin:react/recommended'],
+  extends: ['@35up/eslint-config-35up-base', 'plugin:react/recommended'],
   plugins: ['react'],
   env: {
     browser: true,

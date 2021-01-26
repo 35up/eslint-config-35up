@@ -1,5 +1,5 @@
 {
-  "name": "@caseable/eslint-config-35up-base",
+  "name": "@35up/eslint-config-35up-base",
   "version": "0.0.6",
   "description": "35up's base JS ESlint config",
   "main": "index.js",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caseable/eslint-config-35up.git"
+    "url": "git+https://github.com/35up/eslint-config-35up.git"
   },
-  "author": "caseable GmbH <it@caseable.com>",
+  "author": "35up GmbH <the.engineers@35up.com>",
   "license": "",
   "bugs": {
-    "url": "https://github.com/caseable/eslint-config-35up/issues"
+    "url": "https://github.com/35up/eslint-config-35up/issues"
   },
-  "homepage": "https://github.com/caseable/eslint-config-35up"
+  "homepage": "https://github.com/35up/eslint-config-35up"
 }

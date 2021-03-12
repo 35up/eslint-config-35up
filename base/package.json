@@ -1,6 +1,6 @@
 {
   "name": "@35up/eslint-config-35up-base",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "35up's base JS ESlint config",
   "main": "index.js",
   "scripts": {

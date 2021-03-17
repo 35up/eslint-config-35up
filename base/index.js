@@ -66,6 +66,7 @@ module.exports = {
       },
       rules: {
         'no-unused-expressions': 'off',
+        'no-plusplus': 'off',
         'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
       },
     },

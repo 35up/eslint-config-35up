@@ -60,6 +60,7 @@ module.exports = {
         '**/*.test.*',
         '**/setup-tests.*',
         '**/__mocks__/**/*',
+        'mock-server/**/*',
       ],
       env: {
         node: true,
@@ -76,6 +77,8 @@ module.exports = {
         'webpack.config.*.js',
         'rollup.config.[jt]s',
         'vite.config.[jt]s',
+        'svelte.config.[jt]s',
+        'src/index.dev.[jt]s',
       ],
       env: {
         node: true,

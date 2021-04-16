@@ -1,0 +1,27 @@
+{
+  "name": "@35up/eslint-config-35up-typescript",
+  "version": "1.0.1",
+  "description": "35up's TS ESlint config",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@35up/eslint-config-35up-base": "1.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.21.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/35up/eslint-config-35up.git"
+  },
+  "author": "35up GmbH <the.engineers@35up.com>",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/35up/eslint-config-35up/issues"
+  },
+  "homepage": "https://github.com/35up/eslint-config-35up"
+}

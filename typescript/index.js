@@ -65,7 +65,7 @@ module.exports = {
       files: [
         '**/test/*.ts',
         '**/tests/*.ts',
-        '**/*.test.*.ts',
+        '**/*.test.ts',
         '**/setup-tests.ts',
         '**/__mocks__/**/*.ts',
       ],

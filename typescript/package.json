@@ -1,6 +1,6 @@
 {
   "name": "@35up/eslint-config-35up-typescript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "35up's TS ESlint config",
   "main": "index.js",
   "scripts": {

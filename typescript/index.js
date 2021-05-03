@@ -6,6 +6,7 @@ module.exports = {
     {
       files: [
         '**/*.ts',
+        '**/*.tsx',
       ],
       rules: {
         'no-shadow': 'off',
@@ -68,6 +69,11 @@ module.exports = {
         '**/*.test.ts',
         '**/setup-tests.ts',
         '**/__mocks__/**/*.ts',
+        '**/test/*.tsx',
+        '**/tests/*.tsx',
+        '**/*.test.tsx',
+        '**/setup-tests.tsx',
+        '**/__mocks__/**/*.tsx',
       ],
       rules: {
         '@typescript-eslint/no-empty-function': 'off',

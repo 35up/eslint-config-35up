@@ -90,24 +90,6 @@ module.exports = {
     },
     {
       files: [
-        '**/test/*.ts',
-        '**/tests/*.ts',
-        '**/*.test.ts',
-        '**/setup-tests.ts',
-        '**/__mocks__/**/*.ts',
-        '**/test/*.tsx',
-        '**/tests/*.tsx',
-        '**/*.test.tsx',
-        '**/setup-tests.tsx',
-        '**/__mocks__/**/*.tsx',
-      ],
-      rules: {
-        '@typescript-eslint/no-empty-function': 'off',
-        '@typescript-eslint/no-unused-expressions': 'off',
-      },
-    },
-    {
-      files: [
         '**/*.ts',
         '**/*.tsx',
       ],
@@ -163,6 +145,47 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
+      ],
+    },
+    {
+      files: [
+        '**/test/*.ts',
+        '**/tests/*.ts',
+        '**/*.test.ts',
+        '**/setup-tests.ts',
+        '**/__mocks__/**/*.ts',
+        '**/test/*.tsx',
+        '**/tests/*.tsx',
+        '**/*.test.tsx',
+        '**/setup-tests.tsx',
+        '**/__mocks__/**/*.tsx',
+      ],
+      rules: {
+        '@typescript-eslint/no-empty-function': 'off',
+        '@typescript-eslint/no-unused-expressions': 'off',
+      },
+    },
+    {
+      files: [
+        'svelte.config.js',
+        'rollup.config.js',
+        'vite.config.js',
+        'src/index.dev.ts',
+      ],
+      env: {
+        node: true,
+        browser: false,
+      },
+      rules: {
+        'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
+      },
+    },
+    {
+      files: [
+        'tests-acceptance/**/*',
+      ],
+      extends: [
+        'plugin:cypress/recommended',
       ],
     },
   ],

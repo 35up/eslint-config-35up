@@ -167,7 +167,6 @@ module.exports = {
     },
     {
       files: [
-        'svelte.config.js',
         'rollup.config.js',
         'vite.config.js',
         'src/index.dev.ts',

@@ -8,4 +8,18 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
   },
+  overrides: [
+    {
+      files: [
+        'svelte.config.js',
+      ],
+      env: {
+        node: true,
+        browser: false,
+      },
+      rules: {
+        'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
+      },
+    },
+  ],
 };

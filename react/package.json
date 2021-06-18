@@ -1,18 +1,18 @@
 {
   "name": "@35up/eslint-config-35up-react",
   "version": "1.0.1",
-  "description": "35up's react JS ESlint config",
+  "description": "35up's react ESlint config",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
   "dependencies": {
     "@35up/eslint-config-35up-base": "1.0.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-react": "^7.22.0"
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-react": "^7.24.0"
   },
   "peerDependencies": {
-    "eslint": "^7.21.0"
+    "eslint": "^7.28.0"
   },
   "repository": {
     "type": "git",

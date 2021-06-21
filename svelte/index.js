@@ -4,10 +4,6 @@ module.exports = {
   env: {
     browser: true,
   },
-  rules: {
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': 'error',
-  },
   overrides: [
     {
       files: [

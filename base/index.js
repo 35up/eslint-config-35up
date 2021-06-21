@@ -150,14 +150,14 @@ module.exports = {
     {
       files: [
         '**/test/*.ts',
-        '**/tests/*.ts',
-        '**/*.test.ts',
-        '**/setup-tests.ts',
-        '**/__mocks__/**/*.ts',
         '**/test/*.tsx',
+        '**/tests/*.ts',
         '**/tests/*.tsx',
+        '**/*.test.ts',
         '**/*.test.tsx',
+        '**/setup-tests.ts',
         '**/setup-tests.tsx',
+        '**/__mocks__/**/*.ts',
         '**/__mocks__/**/*.tsx',
       ],
       rules: {
@@ -182,6 +182,7 @@ module.exports = {
     {
       files: [
         'tests-acceptance/**/*',
+        'cypress/**/*',
       ],
       extends: [
         'plugin:cypress/recommended',

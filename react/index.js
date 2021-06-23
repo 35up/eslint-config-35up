@@ -10,6 +10,10 @@ module.exports = {
     },
   },
   settings: {
+    react: {
+      version: 'none',
+      pragma: 'h',
+    },
     'import/extensions': ['.js', '.jsx'],
     'import/resolver': {
       node: {
@@ -108,6 +112,25 @@ module.exports = {
     'react/jsx-key': 'warn',
     'react/no-access-state-in-setstate': 'warn',
     'react/jsx-child-element-spacing': 'warn',
+    'react/prop-types': 'off',
+    '@typescript-eslint/naming-convention': [
+      'warn',
+      {
+        selector: [
+          'variable',
+          'function',
+          'parameter',
+          'method',
+          'property',
+        ],
+        format: ['camelCase'],
+      },
+      {
+        selector: ['variable'],
+        modifiers: ['const'],
+        format: ['strictCamelCase', 'PascalCase', 'UPPER_CASE'],
+      },
+    ],
   },
   overrides: [
     {
@@ -120,6 +143,21 @@ module.exports = {
       ],
       env: {
         jest: true,
+      },
+    },
+    {
+      files: [
+        '**/*.ts',
+        '**/*.tsx',
+      ],
+      extends: [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+      ],
+      rules: {
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': 'off',
+        'react/jsx-fragments': 'off',
       },
     },
   ]

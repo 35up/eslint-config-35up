@@ -112,7 +112,6 @@ module.exports = {
     'react/jsx-key': 'warn',
     'react/no-access-state-in-setstate': 'warn',
     'react/jsx-child-element-spacing': 'warn',
-    'react/prop-types': 'off',
     '@typescript-eslint/naming-convention': [
       'warn',
       {
@@ -160,5 +159,13 @@ module.exports = {
         'react/jsx-fragments': 'off',
       },
     },
+    {
+      files: [
+        '**/*.tsx',
+      ],
+      rules: {
+        'react/prop-types': 'off',
+      }
+    }
   ]
 };

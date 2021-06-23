@@ -6,9 +6,6 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  rules: {
-    'no-await-in-loop': 'off',
-  },
   overrides: [
     {
       files: [

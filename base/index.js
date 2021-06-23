@@ -27,6 +27,7 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
+    'no-await-in-loop': 'off',
     'no-underscore-dangle': 'error',
     'arrow-parens': ['error', 'as-needed', {requireForBlockBody: true}],
     'no-multiple-empty-lines': ['error', {max: 2, maxBOF: 0, maxEOF: 1}],

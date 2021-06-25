@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['eslint:recommended', 'airbnb-base'],
-  plugins: ['import'],
+  plugins: ['import', '@typescript-eslint'],
   env: {
     es6: true,
   },
@@ -27,6 +27,7 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
+    'no-await-in-loop': 'off',
     'no-underscore-dangle': 'error',
     'arrow-parens': ['error', 'as-needed', {requireForBlockBody: true}],
     'no-multiple-empty-lines': ['error', {max: 2, maxBOF: 0, maxEOF: 1}],
@@ -87,6 +88,106 @@ module.exports = {
       rules: {
         'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
       },
+    },
+    {
+      files: [
+        '**/*.ts',
+        '**/*.tsx',
+      ],
+      rules: {
+        'no-shadow': 'off',
+        '@typescript-eslint/no-shadow': 'error',
+        'no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': 'error',
+        '@typescript-eslint/prefer-enum-initializers': 'error',
+        '@typescript-eslint/naming-convention': [
+          'warn',
+          {
+            selector: ['enum', 'enumMember'],
+            format: ['UPPER_CASE'],
+          },
+          {
+            selector: ['typeAlias'],
+            format: ['StrictPascalCase'],
+            prefix: ['T'],
+          },
+          {
+            selector: [
+              'variable',
+              'function',
+              'parameter',
+              'method',
+              'property',
+            ],
+            format: ['strictCamelCase'],
+          },
+          {
+            selector: [
+              'variable',
+              'function',
+              'parameter',
+              'method',
+              'property',
+            ],
+            modifiers: ['requiresQuotes'],
+            format: null,
+          },
+          {
+            selector: ['variable'],
+            modifiers: ['const'],
+            format: ['strictCamelCase', 'UPPER_CASE'],
+          },
+          {
+            selector: ['class'],
+            format: ['StrictPascalCase'],
+          },
+        ],
+      },
+      extends: [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+      ],
+    },
+    {
+      files: [
+        '**/test/*.ts',
+        '**/test/*.tsx',
+        '**/tests/*.ts',
+        '**/tests/*.tsx',
+        '**/*.test.ts',
+        '**/*.test.tsx',
+        '**/setup-tests.ts',
+        '**/setup-tests.tsx',
+        '**/__mocks__/**/*.ts',
+        '**/__mocks__/**/*.tsx',
+      ],
+      rules: {
+        '@typescript-eslint/no-empty-function': 'off',
+        '@typescript-eslint/no-unused-expressions': 'off',
+      },
+    },
+    {
+      files: [
+        'rollup.config.js',
+        'vite.config.js',
+        'src/index.dev.ts',
+      ],
+      env: {
+        node: true,
+        browser: false,
+      },
+      rules: {
+        'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
+      },
+    },
+    {
+      files: [
+        'tests-acceptance/**/*',
+        'cypress/**/*',
+      ],
+      extends: [
+        'plugin:cypress/recommended',
+      ],
     },
   ],
 };

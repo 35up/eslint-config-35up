@@ -12,7 +12,6 @@ module.exports = {
   settings: {
     react: {
       version: 'none',
-      pragma: 'h',
     },
     'import/extensions': ['.js', '.jsx'],
     'import/resolver': {
@@ -97,7 +96,7 @@ module.exports = {
     'react/jsx-fragments': ['error', 'element'],
     'react/static-property-placement': 'error',
     'react/jsx-equals-spacing': 'error',
-    'react/jsx-filename-extension': 'error',
+    'react/jsx-filename-extension': ['error', {extensions: ['.jsx', '.tsx']}],
     'react/jsx-no-comment-textnodes': 'error',
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',

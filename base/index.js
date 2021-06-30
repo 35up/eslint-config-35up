@@ -74,6 +74,18 @@ module.exports = {
     },
     {
       files: [
+        '**/test/*',
+        '**/tests/*',
+        '**/*.test.*',
+        '**/setup-tests.*',
+        '**/__mocks__/**/*',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+    {
+      files: [
         'webpack.config.js',
         'webpack.config.*.js',
         'rollup.config.[jt]s',
@@ -164,20 +176,6 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-unused-expressions': 'off',
-      },
-    },
-    {
-      files: [
-        'rollup.config.js',
-        'vite.config.js',
-        'src/index.dev.ts',
-      ],
-      env: {
-        node: true,
-        browser: false,
-      },
-      rules: {
-        'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
       },
     },
     {

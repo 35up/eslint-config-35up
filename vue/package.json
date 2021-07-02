@@ -7,7 +7,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@35up/eslint-config-35up-base": "2.0.2",
+    "@35up/eslint-config-35up-base": "^2.0.2",
     "vue-eslint-parser": "^7.6.0"
   },
   "peerDependencies": {

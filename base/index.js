@@ -109,6 +109,7 @@ module.exports = {
         'no-shadow': 'off',
         '@typescript-eslint/no-shadow': 'error',
         'no-unused-expressions': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/prefer-enum-initializers': 'error',
         '@typescript-eslint/naming-convention': [

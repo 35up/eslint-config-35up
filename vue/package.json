@@ -1,13 +1,13 @@
 {
   "name": "@35up/eslint-config-35up-vue",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "35up's vue ESlint config",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
   "dependencies": {
-    "@35up/eslint-config-35up-base": "^2.0.3",
+    "@35up/eslint-config-35up-base": "^2.0.4",
     "eslint-plugin-vue": "^7.12.1",
     "vue-eslint-parser": "^7.6.0"
   },

@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-35up--monorepo",
+  "private": true,
+  "workspaces": [
+    "base",
+    "react",
+    "svelte",
+    "vue"
+  ],
+  "scripts": {
+    "publish": "npm run publish --workspaces",
+    "version:patch": "npm version patch --workspaces",
+    "version:minor": "npm version minor --workspaces",
+    "version:major": "npm version major --workspaces"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "base",
+    "react",
+    "svelte",
+    "vue"
+  ],
+  "version": "2.0.7"
+}

@@ -29,6 +29,7 @@ module.exports = {
     ],
     'no-await-in-loop': 'off',
     'no-underscore-dangle': 'error',
+    'no-continue': 'off',
     'arrow-parens': ['error', 'as-needed', {requireForBlockBody: true}],
     'no-multiple-empty-lines': ['error', {max: 2, maxBOF: 0, maxEOF: 1}],
     'class-methods-use-this': 'off',
@@ -108,6 +109,8 @@ module.exports = {
       rules: {
         'no-shadow': 'off',
         '@typescript-eslint/no-shadow': 'error',
+        'dot-notation': 'off',
+        '@typescript-eslint/dot-notation': ['error'],
         'no-unused-expressions': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-unused-expressions': 'error',

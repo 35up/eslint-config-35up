@@ -128,6 +128,11 @@ module.exports = {
         modifiers: ['const'],
         format: ['strictCamelCase', 'PascalCase', 'UPPER_CASE'],
       },
+      {
+        selector: ['function'],
+        modifiers: ['exported'],
+        format: ['camelCase', 'PascalCase'],
+      },
     ],
   },
   overrides: [

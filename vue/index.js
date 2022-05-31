@@ -17,6 +17,10 @@ module.exports = {
         'plugin:vue/vue3-essential',
         'plugin:vue/vue3-recommended',
       ],
+      rules: {
+        'vue/no-deprecated-slot-attribute': 'off',
+        'no-use-before-define': ['error', {functions: false}],
+      }
     },
   ],
 };

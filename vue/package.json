@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@35up/eslint-config-35up-base": "^2.0.8",
-    "eslint-plugin-vue": "^7.12.1",
-    "vue-eslint-parser": "^7.6.0"
+    "eslint-plugin-vue": "^9.0.1",
+    "vue-eslint-parser": "^9.0.2"
   },
   "peerDependencies": {
     "eslint": "^7.28.0"

@@ -114,6 +114,15 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'warn',
       {
+        selector: ['enum', 'enumMember'],
+        format: ['UPPER_CASE'],
+      },
+      {
+        selector: ['typeAlias'],
+        format: ['StrictPascalCase'],
+        prefix: ['T'],
+      },
+      {
         selector: [
           'variable',
           'function',
@@ -124,9 +133,24 @@ module.exports = {
         format: ['camelCase'],
       },
       {
+        selector: [
+          'variable',
+          'function',
+          'parameter',
+          'method',
+          'property',
+        ],
+        modifiers: ['requiresQuotes'],
+        format: null,
+      },
+      {
         selector: ['variable'],
         modifiers: ['const'],
         format: ['strictCamelCase', 'PascalCase', 'UPPER_CASE'],
+      },
+      {
+        selector: ['class'],
+        format: ['StrictPascalCase'],
       },
     ],
   },

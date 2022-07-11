@@ -156,6 +156,12 @@ module.exports = {
             selector: ['class'],
             format: ['StrictPascalCase'],
           },
+          {
+            selector: ['parameter'],
+            modifiers: ['unused'],
+            leadingUnderscore: 'allowSingleOrDouble',
+            format: null,
+          },
         ],
       },
       extends: [

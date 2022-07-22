@@ -46,12 +46,19 @@ module.exports = {
       {exceptAfterSingleLine: true},
     ],
     'no-param-reassign': ['error', {props: false}],
+    'no-constant-binary-expression': 'error',
     'import/extensions': ['error', 'never', {'mock-data': 'always'}],
     'import/no-cycle': 'warn',
     'import/no-extraneous-dependencies': 'error',
     'import/order': 'warn',
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
+    '@typescript-eslint/consistent-type-exports': [
+      'error',
+      {fixMixedExportsWithInlineTypeSpecifier: true},
+    ],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error', {functions: false}],
   },
   overrides: [
     {
@@ -195,6 +202,24 @@ module.exports = {
       extends: [
         'plugin:cypress/recommended',
       ],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {devDependencies: true},
+        ],
+      },
+    },
+    {
+      files: [
+        'tests-acceptance/commands/**',
+        'cypress/commands/**',
+      ],
+      rules: {
+        '@typescript-eslint/no-namespace': [
+          'error',
+          {allowDeclarations: true},
+        ],
+      },
     },
   ],
 };

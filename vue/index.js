@@ -19,7 +19,6 @@ module.exports = {
       ],
       rules: {
         'vue/no-deprecated-slot-attribute': 'off',
-        'no-use-before-define': ['error', {functions: false}],
       }
     },
   ],

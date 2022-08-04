@@ -41,6 +41,10 @@ module.exports = {
     'react/jsx-max-props-per-line': ['error', {maximum: 1, when: 'multiline'}],
     'react/jsx-pascal-case': 'error',
     'react/prefer-es6-class': ['error', 'always'],
+    'react/no-unused-class-component-methods': 'error',
+    'react/no-arrow-function-lifecycle': 'error',
+    'react/no-invalid-html-attribute': 'error',
+    'react/hook-use-state': 'error',
     'react/prefer-stateless-function': ['warn', {ignorePureComponents: true}],
     'react/self-closing-comp': 'error',
     'react/sort-comp': [
@@ -90,6 +94,10 @@ module.exports = {
       },
     ],
     'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
+    'react/jsx-max-props-per-line': [
+      'error',
+      {'maximum': {'single': 2, 'multi': 1}},
+    ],
     'react/default-props-match-prop-types': ['error', {allowRequiredDefaults: false}],
     'react/jsx-curly-brace-presence': ['error', 'never'],
     'react/state-in-constructor': ['error', 'never'],

@@ -122,7 +122,7 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'warn',
       {
-        selector: ['enum', 'enumMember', 'objectLiteralProperty'],
+        selector: ['enum', 'enumMember'],
         format: ['UPPER_CASE'],
       },
       {
@@ -136,7 +136,8 @@ module.exports = {
           'function',
           'parameter',
           'method',
-          'property',
+          'classProperty',
+          'typeProperty',
         ],
         format: ['camelCase'],
       },

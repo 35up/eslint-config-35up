@@ -129,10 +129,6 @@ module.exports = {
             format: ['UPPER_CASE'],
           },
           {
-            selector: ['objectLiteralProperty'],
-            format: ['strictCamelCase', 'UPPER_CASE'],
-          },
-          {
             selector: ['typeAlias'],
             format: ['StrictPascalCase'],
             prefix: ['T'],
@@ -143,7 +139,8 @@ module.exports = {
               'function',
               'parameter',
               'method',
-              'property',
+              'classProperty',
+              'typeProperty',
             ],
             format: ['strictCamelCase'],
           },

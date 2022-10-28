@@ -53,12 +53,7 @@ module.exports = {
     'import/order': 'warn',
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
-    '@typescript-eslint/consistent-type-exports': [
-      'error',
-      {fixMixedExportsWithInlineTypeSpecifier: true},
-    ],
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': ['error', {functions: false}],
+    'no-use-before-define': ['error', {functions: false}],
   },
   overrides: [
     {
@@ -114,6 +109,12 @@ module.exports = {
         '**/*.tsx',
       ],
       rules: {
+        '@typescript-eslint/consistent-type-exports': [
+          'error',
+          {fixMixedExportsWithInlineTypeSpecifier: true},
+        ],
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': ['error', {functions: false}],
         'no-shadow': 'off',
         '@typescript-eslint/no-shadow': 'error',
         'dot-notation': 'off',

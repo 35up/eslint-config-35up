@@ -53,7 +53,7 @@ module.exports = {
     'import/order': 'warn',
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
-    'no-use-before-define': ['error', {functions: false}],
+    'no-use-before-define': 'off',
   },
   overrides: [
     {
@@ -114,7 +114,7 @@ module.exports = {
           {fixMixedExportsWithInlineTypeSpecifier: true},
         ],
         'no-use-before-define': 'off',
-        '@typescript-eslint/no-use-before-define': ['error', {functions: false}],
+        '@typescript-eslint/no-use-before-define': 'off',
         'no-shadow': 'off',
         '@typescript-eslint/no-shadow': 'error',
         'dot-notation': 'off',

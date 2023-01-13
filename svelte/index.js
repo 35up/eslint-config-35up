@@ -14,6 +14,7 @@ module.exports = {
       rules: {
         'import/no-mutable-exports': 'off',
         'import/first': 'off',
+        'no-undef-init': 'off',
       },
     },
     {

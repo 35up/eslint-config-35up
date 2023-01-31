@@ -61,6 +61,7 @@ module.exports = {
         '**/test/*',
         '**/tests/*',
         '**/*.test.*',
+        '**/*.stories.*',
         '**/setup-tests.*',
         '**/__mocks__/**/*',
         'mock-server/**/*',
@@ -186,6 +187,8 @@ module.exports = {
         '**/tests/*.tsx',
         '**/*.test.ts',
         '**/*.test.tsx',
+        '**/*.stories.ts',
+        '**/*.stories.tsx',
         '**/setup-tests.ts',
         '**/setup-tests.tsx',
         '**/__mocks__/**/*.ts',
@@ -221,6 +224,63 @@ module.exports = {
           'error',
           {allowDeclarations: true},
         ],
+      },
+    },
+    {
+      files: [
+        '**/*.stories.ts',
+        '**/*.stories.tsx',
+      ],
+      rules: {
+        '@typescript-eslint/naming-convention': [
+          'warn',
+          {
+            selector: ['enum', 'enumMember'],
+            format: ['UPPER_CASE'],
+          },
+          {
+            selector: ['typeAlias'],
+            format: ['StrictPascalCase'],
+            prefix: ['T'],
+          },
+          {
+            selector: [
+              'variable',
+              'function',
+              'parameter',
+              'method',
+              'classProperty',
+              'typeProperty',
+            ],
+            format: ['strictCamelCase'],
+          },
+          {
+            selector: [
+              'variable',
+              'function',
+              'parameter',
+              'method',
+              'property',
+            ],
+            modifiers: ['requiresQuotes'],
+            format: null,
+          },
+          {
+            selector: ['variable'],
+            modifiers: ['const'],
+            format: ['strictCamelCase', 'UPPER_CASE', 'PascalCase'],
+          },
+          {
+            selector: ['class'],
+            format: ['StrictPascalCase'],
+          },
+          {
+            selector: ['parameter'],
+            modifiers: ['unused'],
+            leadingUnderscore: 'allowSingleOrDouble',
+            format: null,
+          },
+        ]
       },
     },
   ],

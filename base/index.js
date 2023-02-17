@@ -124,6 +124,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/prefer-enum-initializers': 'error',
+        '@typescript-eslint/ban-types': ['error', {types: {"{}": false}}],
         '@typescript-eslint/naming-convention': [
           'warn',
           {
@@ -197,6 +198,7 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-unused-expressions': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
       },
     },
     {

@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['eslint:recommended', 'airbnb-base'],
-  plugins: ['import', '@typescript-eslint'],
+  plugins: ['import', '@typescript-eslint', 'no-only-tests'],
   env: {
     es6: true,
   },
@@ -54,6 +54,8 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
     'no-use-before-define': 'off',
+    'no-only-tests/no-only-tests': ['error', {focus: ['only', 'skip']},
+    ],
   },
   overrides: [
     {
@@ -124,7 +126,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/prefer-enum-initializers': 'error',
-        '@typescript-eslint/ban-types': ['error', {types: {"{}": false}}],
+        '@typescript-eslint/ban-types': ['error', {types: {'{}': false}}],
         '@typescript-eslint/naming-convention': [
           'warn',
           {
@@ -282,7 +284,7 @@ module.exports = {
             leadingUnderscore: 'allowSingleOrDouble',
             format: null,
           },
-        ]
+        ],
       },
     },
   ],

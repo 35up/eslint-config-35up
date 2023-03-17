@@ -38,7 +38,6 @@ module.exports = {
     ],
     'react/jsx-handler-names': 'off',
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-max-props-per-line': ['error', {maximum: 1, when: 'multiline'}],
     'react/jsx-pascal-case': 'error',
     'react/prefer-es6-class': ['error', 'always'],
     'react/no-unused-class-component-methods': 'error',

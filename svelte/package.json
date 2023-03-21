@@ -18,7 +18,7 @@
     "url": "git+https://github.com/35up/eslint-config-35up.git"
   },
   "author": "35up GmbH <the.engineers@35up.com>",
-  "license": "",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/35up/eslint-config-35up/issues"
   },

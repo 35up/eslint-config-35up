@@ -1,20 +1,25 @@
 module.exports = {
-  extends: ['@35up/eslint-config-35up-base'],
-  plugins: ['svelte3', '@typescript-eslint'],
+  extends: ['@35up/eslint-config-35up-base', 'plugin:svelte/recommended'],
+  plugins: ['svelte', '@typescript-eslint'],
+  parserOptions: {
+    extraFileExtensions: ['.svelte'],
+  },
   env: {
     browser: true,
   },
   settings: {
-    'svelte3/typescript': true,
+    'svelte/typescript': true,
   },
   overrides: [
     {
       files: ['*.svelte'],
-      processor: 'svelte3/svelte3',
-      rules: {
-        'import/no-mutable-exports': 'off',
-        'import/first': 'off',
-        'no-undef-init': 'off',
+      parser: 'svelte-eslint-parser',
+      parserOptions: {
+        parser: {
+          ts: '@typescript-eslint/parser',
+          js: 'espree',
+          typescript: '@typescript-eslint/parser',
+        },
       },
     },
     {

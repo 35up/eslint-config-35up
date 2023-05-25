@@ -111,6 +111,7 @@ module.exports = {
         '**/*.ts',
         '**/*.tsx',
       ],
+      parser: '@typescript-eslint/parser',
       rules: {
         '@typescript-eslint/consistent-type-exports': [
           'error',

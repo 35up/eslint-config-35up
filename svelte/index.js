@@ -23,6 +23,7 @@ module.exports = {
         },
       },
       rules: {
+        'no-undef-init': 'off',
         'svelte/valid-compile': 'warn',
         'import/no-mutable-exports': 'off',
       },

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-35up--monorepo",
-  "private": true,
+  "private": false,
   "scripts": {
     "bump-version": "lerna version --no-git-tag-version --no-push",
     "bootstrap": "lerna bootstrap"

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@35up/eslint-config-35up-base', 'plugin:svelte/recommended'],
+  extends: ['@35up/eslint-config-35up-base'],
   plugins: ['svelte', '@typescript-eslint'],
   parserOptions: {
     extraFileExtensions: ['.svelte'],
@@ -13,6 +13,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.svelte'],
+      extends: ['plugin:svelte/recommended'],
       parser: 'svelte-eslint-parser',
       parserOptions: {
         parser: {
@@ -20,6 +21,11 @@ module.exports = {
           js: 'espree',
           typescript: '@typescript-eslint/parser',
         },
+      },
+      rules: {
+        'no-undef-init': 'off',
+        'svelte/valid-compile': 'warn',
+        'import/no-mutable-exports': 'off',
       },
     },
     {

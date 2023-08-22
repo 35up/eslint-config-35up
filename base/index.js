@@ -56,6 +56,7 @@ module.exports = {
     'no-use-before-define': 'off',
     'no-only-tests/no-only-tests': ['error', {focus: ['only', 'skip']},
     ],
+    'eqeqeq': ['error', 'smart', {'null': 'ignore'}],
   },
   overrides: [
     {

@@ -1,13 +1,13 @@
 {
   "name": "@35up/eslint-config-35up-react",
-  "version": "4.0.11",
+  "version": "4.0.12",
   "description": "35up's react ESlint config",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
   "dependencies": {
-    "@35up/eslint-config-35up-base": "^4.0.11",
+    "@35up/eslint-config-35up-base": "^4.0.12",
     "eslint-plugin-react": "^7.33.2"
   },
   "peerDependencies": {

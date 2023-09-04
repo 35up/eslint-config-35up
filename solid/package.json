@@ -1,6 +1,6 @@
 {
   "name": "@35up/eslint-config-35up-solid",
-  "version": "4.0.13",
+  "version": "4.0.14",
   "description": "35up's solid.js eslint config",
   "main": "index.js",
   "scripts": {

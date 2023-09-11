@@ -1,3 +1,5 @@
+const { tsRules } = require('@35up/eslint-config-35up-base/ts-rules');
+
 module.exports = {
   extends: ['@35up/eslint-config-35up-base'],
   plugins: ['svelte', '@typescript-eslint'],
@@ -26,11 +28,13 @@ module.exports = {
         'no-undef-init': 'off',
         'svelte/valid-compile': 'warn',
         'import/no-mutable-exports': 'off',
+        ...tsRules,
       },
     },
     {
       files: [
         'svelte.config.js',
+        'svelte.config.ts',
       ],
       env: {
         node: true,

@@ -1,13 +1,13 @@
 {
   "name": "@35up/eslint-config-35up-svelte",
-  "version": "4.0.13",
+  "version": "4.0.14",
   "description": "35up's svelte ESlint config",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
   "dependencies": {
-    "@35up/eslint-config-35up-base": "^4.0.13",
+    "@35up/eslint-config-35up-base": "^4.0.14",
     "eslint-plugin-svelte": "^2.28.0",
     "svelte-eslint-parser": "^0.32.2"
   },
